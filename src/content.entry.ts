@@ -218,79 +218,82 @@ span {
 }
 `
 const darkThemeCss = `body {
-  background-color: #1a1a1a;
-  color: #eee;
+  background-color: #282c34;
+  color: #abb2bf;
   -webkit-font-smoothing: antialiased;
 }
 
 a:hover,
 a:active {
-  color: hsl(114, 90%, 55%);
+  color: #98c379;
 }
 
 #optionBar {
   -webkit-font-smoothing: subpixel-antialiased;
 
-  background: #1a1a1a;
-  box-shadow: 0px 0px 3px 3px #1a1a1a;
+  background: #282c34;
+  box-shadow: 0px 0px 3px 3px #282c34;
 }
 
 #jsonFormatterParsed {
-  color: #b6b6b6;
+  color: #abb2bf;
 }
 
 .blockInner {
-  border-color: #4d4d4d;
+  border-color: #3e4451;
 }
 
 .k {
-  color: #fff;
+  color: #e06c75;
 }
 
 .s {
-  color: hsl(114, 100%, 35%);
+  color: #98c379;
 }
 
 .bl,
-.nl,
+.nl {
+  color: #56b6c2;
+}
+
 .n {
-  color: hsl(200, 100%, 70%);
+  color: #d19a66;
 }
 
 .e {
-  color: #fff;
-  opacity: 0.25;
+  color: #abb2bf;
+  opacity: 0.35;
 }
 
 .e:hover {
-  opacity: 0.45;
+  opacity: 0.55;
 }
 .e:active {
-  opacity: 0.6;
+  opacity: 0.75;
 }
 
 .collapsed:after {
-  color: #707070;
+  color: #5c6370;
 }
 
 :is(#buttonPlain, #buttonFormatted) {
   text-shadow: none;
   border: 0;
-  background: hsl(200, 35%, 60%);
+  background: #3e4451;
   box-shadow: none;
-  color: #000;
+  color: #abb2bf;
 }
 
 :is(#buttonPlain, #buttonFormatted):not(.selected):hover {
   box-shadow: none;
-  background: hsl(200, 50%, 70%);
-  color: #000;
+  background: #4b5263;
+  color: #abb2bf;
 }
 
 :is(#buttonPlain, #buttonFormatted).selected {
   box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.7);
-  background: hsl(200, 40%, 60%);
-  color: #000;
+  background: #2c313a;
+  color: #61afef;
 }
 `
 
