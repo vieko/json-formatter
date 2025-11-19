@@ -64,13 +64,13 @@ const css = `body {
   color: #222;
 }
 :is(#buttonPlain, #buttonFormatted):active {
-  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.2);
-  background: #ebebeb linear-gradient(#f4f4f4, #efefef 40%, #dcdcdc);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  background: #d8d8d8 linear-gradient(#e0e0e0, #dadada 40%, #d0d0d0);
   color: #333;
 }
 :is(#buttonPlain, #buttonFormatted).selected {
-  box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.2);
-  background: #ebebeb linear-gradient(#e4e4e4, #dfdfdf 40%, #dcdcdc);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  background: #d8d8d8 linear-gradient(#dadada, #d4d4d4 40%, #d0d0d0);
   color: #333;
 }
 :is(#buttonPlain, #buttonFormatted):focus {
@@ -291,9 +291,15 @@ a:active {
 }
 
 :is(#buttonPlain, #buttonFormatted).selected {
-  box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.7);
+  box-shadow: none;
   background: #2c313a;
   color: #61afef;
+}
+
+:is(#buttonPlain, #buttonFormatted):active {
+  box-shadow: none;
+  background: #2c313a;
+  color: #abb2bf;
 }
 `
 
